@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enigmata - The Crypto Enigma</title>
+    <style>
+        body {
+            background-color: #0D0D0D;
+            color: #E0E0E0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 3em;
+            color: #8A2BE2;
+            text-shadow: 0 0 20px #8A2BE2;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 20px;
+        }
+        .mystery-button {
+            background-color: transparent;
+            color: #8A2BE2;
+            border: 2px solid #8A2BE2;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .mystery-button:hover {
+            background-color: #8A2BE2;
+            color: #0D0D0D;
+            box-shadow: 0 0 20px #8A2BE2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Enigmata</h1>
+    <p>The pathway to hidden crypto knowledge starts here. Are you ready to unlock the enigma?</p>
+    <button class="mystery-button" onclick="reveal()">Enter the Mystery</button>
+
+    <div id="secret" style="display:none; margin-top: 30px;">
+        <p><strong>Clue #1:</strong> "In the blocks, the truth hides in plain sight."</p>
+    </div>
+
+    <script>
+        function reveal() {
+            document.getElementById('secret').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
